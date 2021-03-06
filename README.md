@@ -21,12 +21,22 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* Sources
+# Note
+ 
 -OmniAuthのGithub
 https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview
 
 -google-oauth2のGithub
 https://github.com/zquestz/omniauth-google-oauth2
+ 
+# Author
+ 
+作成情報を列挙する
+ 
+* 作成者
+* 所属
+* E-mail
+
 
 手順	処理内容
 ①	Facebook（またはGoogle）での認証が開始される
