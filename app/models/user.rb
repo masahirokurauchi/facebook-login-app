@@ -20,7 +20,7 @@ class User < ApplicationRecord
      sns.save
     end
     
-    user
+    { user: user, sns: sns }
 
   end
 end
