@@ -20,10 +20,14 @@ Devise.setup do |config|
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
 
-  config.omniauth :facebook,ENV['FACEBOOK_CLIENT_ID'],ENV['FACEBOOK_CLIENT_SECRET']
-  config.omniauth :google_oauth2,ENV['GOOGLE_CLIENT_ID'],ENV['GOOGLE_CLIENT_SECRET']
-  # config.omniauth :facebook,Rails.application.credentials.facebook[:facebook_client_id],Rails.application.credentials.facebook[:facebook_crient_secret]
-  # config.omniauth :google_oauth2,Rails.application.credentials.google[:google_client_id],Rails.application.credentials.google[:google_client_secret]
+
+  # config.omniauth :facebook,ENV['FACEBOOK_CLIENT_ID'],ENV['FACEBOOK_CLIENT_SECRET']
+  # config.omniauth :google_oauth2,ENV['GOOGLE_CLIENT_ID'],ENV['GOOGLE_CLIENT_SECRET']
+
+  # Credentialsを使用する
+  config.omniauth :facebook,Rails.application.credentials.facebook[:facebook_client_id],Rails.application.credentials.facebook[:facebook_crient_secret]
+  config.omniauth :google_oauth2,Rails.application.credentials.google[:google_client_id],Rails.application.credentials.google[:google_client_secret]
+
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
